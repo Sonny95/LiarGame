@@ -12,8 +12,22 @@ export default function Home() {
         </div>
 
         {/* set up */}
+
         <div className="w-1/3 h-3/4 bg-gray-300 ">
-          <div>players</div>
+          {/* players */}
+          <div className="w-full h-1/4 bg-gray-400 ">
+            <div>players</div>
+            <button className="w-8 h-8 bg-yellow-300 rounded-full "> - </button>
+            <div className="w-8 h-8 bg-white"></div>
+            <button className="w-8 h-8 bg-yellow-300 rounded-full "> + </button>
+          </div>
+          {/* choose liar */}
+          <div className="w-full h-1/4 bg-gray-400 ">
+            <div>Liars</div>
+            <button className="w-8 h-8 bg-yellow-300 rounded-full "> - </button>
+            <div className="w-8 h-8 bg-white"></div>
+            <button className="w-8 h-8 bg-yellow-300 rounded-full "> + </button>
+          </div>
         </div>
       </div>
     </div>
