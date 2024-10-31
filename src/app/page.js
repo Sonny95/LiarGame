@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,8 +8,12 @@ export default function Home() {
         {/* top */}
         <div className="text-2xl w-full h-1/6 flex items-center justify-center">
           <div>Your Title is</div>
+
           <div className="ml-2 font-bold">Title</div>
-          <button className="ml-4 w-28 h-8 rounded-xl text-base bg-blue-500">Change Title</button>
+
+          <Link href={"/title"}>
+            <button className="ml-4 w-28 h-8 rounded-xl text-base bg-blue-800">Change Title</button>
+          </Link>
         </div>
 
         {/* set up */}
