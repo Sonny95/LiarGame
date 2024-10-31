@@ -24,7 +24,7 @@ function Title() {
           {names.map((name, index) => (
             <button
               key={index}
-              className="mx-2 w-32 h-16 rounded-xl text-base bg-blue-800 mb-4" // mb-2로 아래 여백 추가
+              className="cursor:point mx-2 w-32 h-16 rounded-xl text-base bg-blue-800 mb-4 hover:bg-yellow-500" // mb-2로 아래 여백 추가
             >
               {name}
             </button>

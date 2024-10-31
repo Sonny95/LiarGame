@@ -12,7 +12,9 @@ export default function Home() {
           <div className="ml-2 font-bold">Title</div>
 
           <Link href={"/title"}>
-            <button className="ml-4 w-28 h-8 rounded-xl text-base bg-blue-800">Change Title</button>
+            <button className="ml-4 w-28 h-8 rounded-xl text-base bg-blue-800 hover:bg-yellow-500">
+              Change Title
+            </button>
           </Link>
         </div>
 
@@ -38,7 +40,10 @@ export default function Home() {
               <button className="w-8 h-8 bg-gray-300 rounded-full text-black"> + </button>
             </div>{" "}
             {/* start button */}
-            <button className="w-28 h-8 bg-blue-500 rounded-xl text-base mt-12"> PLAY</button>
+            <button className="w-28 h-8 bg-blue-800 hover:bg-yellow-500 rounded-xl text-base mt-12">
+              {" "}
+              PLAY
+            </button>
           </div>
         </div>
       </div>
