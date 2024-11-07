@@ -18,10 +18,10 @@ export default function Home() {
         </div>
 
         {/* set up */}
-        <div className=" w-full h-3/4 flex items-cetner justify-center font-bold">
+        <div className=" w-full h-3/4 flex items-cetner justify-center font-bold text-3xl">
           <div className="w-2/3 h-3/4 flex flex-col items-center justify-center">
             {/* players */}
-            <div className="w-2/3 h-1/4 flex items-center justify-between">
+            <div className="w-full h-1/4 flex items-center justify-between">
               <div className="w-1/2 flex items-center justify-center">
                 <div>players</div>
               </div>
@@ -30,7 +30,7 @@ export default function Home() {
               <button className="w-8 h-8 bg-gray-300 rounded-full text-black"> + </button>
             </div>
             {/* choose liar */}
-            <div className="w-2/3 l h-1/4 flex items-center justify-between">
+            <div className="w-full h-1/4 flex items-center justify-between">
               <div className="w-1/2 flex items-center justify-center">
                 <div>Liars</div>
               </div>
@@ -39,10 +39,12 @@ export default function Home() {
               <button className="w-8 h-8 bg-gray-300 rounded-full text-black"> + </button>
             </div>{" "}
             {/* start button */}
-            <button className="w-28 h-8 bg-blue-800 hover:bg-yellow-500 rounded-xl text-base mt-12">
-              {" "}
-              PLAY
-            </button>
+            <Link href={"/chatBox"}>
+              <button className="text-3xl w-28 h-12 bg-blue-800 hover:bg-yellow-500 rounded-xl mt-12">
+                {" "}
+                PLAY
+              </button>
+            </Link>
           </div>
         </div>
       </div>
