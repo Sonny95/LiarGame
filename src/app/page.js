@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 export default function Home() {
   return (
