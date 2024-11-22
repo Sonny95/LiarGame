@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Provider } from "./modules/provider";
+import ReduxProvider from "./redux/provider";
 
 export const metadata = {
   title: "Liar Game",
@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Provider>{children}</Provider>
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );
