@@ -21,7 +21,7 @@ export default function Home() {
       <div className="w-1/3 h-3/4 bg-gray-800">
         {/* top */}
         <div className="text-2xl w-full h-1/6 flex items-center justify-center">
-          <div>Your Title is</div>
+          <div>Your Title</div>
 
           <div className="ml-2 font-bold">Title</div>
 
