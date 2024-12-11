@@ -1,19 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 import { increment } from "./redux/counterSlice";
 
 export default function Home() {
-  const dispatch = useDispatch();
-  const count = useSelector((state) => state.counter.value);
+  // const dispatch = useDispatch();
+  // const count = useSelector((state) => state.counter.value);
 
   const handleIncrement = () => {
-    dispatch(increment());
+    // dispatch(increment());
   };
 
   const handleDecrement = () => {
-    dispatch(handleDecrement());
+    // dispatch(handleDecrement());
   };
 
   return (
