@@ -1,21 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useDispatch, useSelector } from "react-redux";
-import { increment } from "./redux/counterSlice";
 
 export default function Home() {
-  const dispatch = useDispatch();
-  const count = useSelector((state) => state.counter.value);
-
-  const handleIncrement = () => {
-    dispatch(increment());
-  };
-
-  const handleDecrement = () => {
-    dispatch(handleDecrement());
-  };
-
   return (
     <div className="w-full h-screen flex items-center justify-center ">
       <div className="w-1/3 h-3/4 bg-gray-800">
@@ -40,21 +27,9 @@ export default function Home() {
               <div className="w-1/2 flex items-center justify-center">
                 <div>players</div>
               </div>
-              <button
-                onClick={handleDecrement}
-                className="w-8 h-8 bg-gray-300 rounded-full text-black"
-              >
-                {" "}
-                -{" "}
-              </button>
+              <button className="w-8 h-8 bg-gray-300 rounded-full text-black"> - </button>
               <div className="w-8 h-8 bg-white flex items-center justify-center text-black">3</div>
-              <button
-                onClick={handleIncrement}
-                className="w-8 h-8 bg-gray-300 rounded-full text-black"
-              >
-                {" "}
-                +{" "}
-              </button>
+              <button className="w-8 h-8 bg-gray-300 rounded-full text-black"> + </button>
             </div>
             {/* choose liar */}
             <div className="w-full h-1/4 flex items-center justify-between">
